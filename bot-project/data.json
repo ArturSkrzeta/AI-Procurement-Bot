@@ -1,0 +1,37 @@
+{"category": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you!", "Hi there, how can I help?"]
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Goodbye!"]
+        },
+        {"tag": "access",
+         "patterns": ["how to get an access to our Webshop?",
+                      "how to get access?",
+                      "how to access shop?"],
+         "responses": ["Firstly, request access on ServiceNow. Once approverd contact IT Help Desk."]
+        },
+        {"tag": "password",
+         "patterns": ["how to reset password?",
+                      "reset password",
+                      "password"],
+         "responses": ["In order to reset you password, call your IT Help Desk"]
+        },
+        {"tag": "purchase-it",
+         "patterns": ["I would like to buy a computer",
+                      "I want to buy a mouse",
+                      "how to order a computer?",
+                      "how can I buy a computer?",
+                      "monitor"],
+         "responses": ["Please check the /It Tab on our website or contact IT buyers at it.buyers@company.com to get the offer from the supplier"]
+        },
+        {"tag": "purchase-office",
+         "patterns": ["I want to buy a chair",
+                      "how to order a chair?",
+                      "furniture"],
+         "responses": ["Please check the /OfficeSupplies Tab on our website or contact OS buyers at os.buyers@company.com to get the offer from the supplier"]
+        }
+   ]
+}
