@@ -1,3 +1,4 @@
+<p>Script description:</p>
 <ul>
   <li>Script converts human's language into numbers.</li>
   <li>Each occurance of a word is being tracked down into a list which finally serves to train the ML model.</li>
