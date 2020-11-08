@@ -11,7 +11,7 @@
 <img src="images/bot.JPG">
 
 <h3>LancasterStemmer</h3>
-  ```
+ ```
    >>> from nltk.stem.lancaster import LancasterStemmer
         >>> st = LancasterStemmer()
         >>> st.stem('maximum')     # Remove "-um" when word is intact
@@ -29,4 +29,4 @@
         >>> st.stem('saying')      # Words starting with consonant must contain at least 3
         'say'
         >>> st.stem('crying')      #     letters and one of those letters must be a vowel
-  ```
+```
