@@ -30,3 +30,19 @@
         'say'
         >>> st.stem('crying')      #     letters and one of those letters must be a vowel
 ```
+
+## Extending vs Appending to Python list
+```
+# Appending
+x = [1, 2, 3]
+x.append([4, 5])
+print (x)
+[1, 2, 3, [4, 5]]
+
+# Extending
+x = [1, 2, 3]
+x.extend([4, 5])
+print (x)
+[1, 2, 3, 4, 5]
+
+```
