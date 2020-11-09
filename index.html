@@ -92,17 +92,23 @@
 										</li>
 										<li>Bag of words depends on sequence of operations on humans language:
 											<br>
-											- sentences splitting  into collection of single words called tokens:
+											- sentences splitting into collection of single words called tokens:
 													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 													'Hello World' --> ['Hello', 'World']<br>
-											- words stemming:
+											- bringing all words into lowercase characters
+											- words stemming for faster model training:
 													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 											 		'saying' --> 'say'<br>
-											- words vectorization replacing occurances of each word with a number:
+											- throwing all processed and simplified words into one collection - a bag
+											- words vectorization
 													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													'Hello all, Hello world' --> [2,1,2,1]
+													if word from a bag occurs in pattern sentence then it scores 1
 													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													where 'Hello' occured twice, 'all' and 'world' once
+													bag of words: ['all', 'great' 'is']
+													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													pattern: ['great','work']
+													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													vectorized bag of word: [0,1,0] as 'great' word form bag occured in the pattern
 										</li>
 										<li>Script uses TFLearn to build the Deep Neural Network consiste of:
 											<br>
