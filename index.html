@@ -82,7 +82,7 @@
 											- if user asks questions similar to a pattern the bot was fed with during training, then bot is able to give a right answer back,<br>
 											- bot compares user's question to a patterns it learnt, then it gives the best maching answer,<br>
 											- there are ready patterns and responses given with JSON file which is data input for bot training,<br>
-											- the category of what given pattertn and corresponding response refers to indicates tag key.
+											- the category of what given pattern and corresponding response refers to, indicates JSON tag key.
 										</li>
 										<li>Preparing so-called <b>bag of words</b> to put sentences down into, understandable for computer, digits:
 											<br>
@@ -92,9 +92,9 @@
 										</li>
 										<li>Bag of words depends on sequence of operations on humans language:
 											<br>
-											- sentences splitting  into collection of single words called tokens, f.e.: 'Hello World' --> ['Hello', 'World']<br>
-											- words stemming , f.e.: 'saying' --> 'say'<br>
-											- words vectorization replacing occurances of each word with a number, f.e.: 'Hello all, hello world' --> [2,1,2,1] where 'Hello' occured twice, 'all' and 'world' once<br>
+											- sentences splitting  into collection of single words called tokens, f.e.: 'Hello World' --> ['Hello', 'World'],<br>
+											- words stemming , f.e.: 'saying' --> 'say',<br>
+											- words vectorization replacing occurances of each word with a number, f.e.: 'Hello all, hello world' --> [2,1,2,1] where 'Hello' occured twice, 'all' and 'world' once.<br>
 										</li>
 										<li>Script uses TFLearn to build the Deep Neural Network consiste of:
 											<br>
