@@ -77,17 +77,24 @@
 									<h3>Demo</h3>
 									<p>Application:</p>
 									<ol>
+										<li>At first, we need to learn a bot how to response depending on the question's pattern:
+											<br>
+											- if user asks questions similar to a pattern the bot was fed with during training, then bot is able to give a right answer back,<br>
+											- bot compares user's question to a patterns it learnt, then it gives the best maching answer,<br>
+											- there are ready patterns and responses given with JSON file which is data input for bot training,<br>
+											- the category of what given pattertn and corresponding response refers to indicates tag key.
+											<li>
 										<li>Preparing so-called <b>bag of words</b> to put sentences down into, understandable for computer, digits:
 											<br>
 											- bag of words is being prepared for both a bot and an user,<br>
 											- for bot, we train a bot to be able to decode human's language,<br>
 											- for user, we translate what user says into computer's lanuage.
 										</li>
-										<li>Creating bag of words steps:
+										<li>Bag of words depends on sequence of operations on humans language:
 											<br>
-											- splitting sentences into collection of single words called tokens,<br>
-											- <br>
-											-
+											- sentences splitting  into collection of single words called tokens, f.e.: 'Hello World' --> ['Hello', 'World']<br>
+											- words stemming , f.e.: 'saying' --> 'say'<br>
+											- words vectorization replacing occurances of each word with a number, f.e.: 'Hello all, hello world' --> [2,1,2,1] where 'Hello' occured twice, 'all' and 'world' once<br>
 										</li>
 										<li>Script uses TFLearn to build the Deep Neural Network consiste of:
 											<br>
@@ -95,7 +102,6 @@
 											- x number of hidden layers in between first and last layer,<br>
 											- last layer of data output as an outocme of goind data thorugh neuorns and so-called <b>activation function</b>.
 										</li>
-										<li>Through neurons of each layer</li>
 									</ol>
 									<p>Chatting with bot:</p>
 									<img src="images/bot.JPG" width="800">
