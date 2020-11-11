@@ -94,21 +94,23 @@
 											<br>
 											- sentences splitting into collection of single words called tokens:
 													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													'Hello World' --> ['Hello', 'World']<br>
+													<code>'Hello World' --> ['Hello', 'World']</code><br>
 											- bringing all words into lowercase characters<br>
 											- words stemming for faster model training:
 													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-											 		'saying' --> 'say'<br>
+											 		<code>'saying' --> 'say'</code><br>
 											- throwing all processed and simplified words into one collection - a bag<br>
 											- words vectorization:
 													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 													if word from a bag occurs in pattern sentence then it scores 1
 													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													bag of words: ['all', 'great' 'is']
+													<code>bag of words: ['all', 'great' 'is']</code>
 													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													pattern: ['great','work']
+													<code>pattern: ['great','work']</code>
 													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-													vectorized bag of words: [0,1,0] as 'great' word from bag occured in the pattern
+													<code>vectorized bag of words: [0,1,0]</code>
+													<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+													as 'great' word from bag occured in the pattern
 										</li>
 										<li>Script uses TFLearn to build the Deep Neural Network consiste of:
 											<br>
