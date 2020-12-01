@@ -55,11 +55,17 @@
 											<li>Consisted of artificial neurons which has its iunputs and output.</li>
 											<li>Inputs can be values of some featres e.g. image brightness or number of pixels (when image recognition app).</li>
 											<li>All conections between input values and neuron is weighted somehow - value of given featur is multiplied by a weight</li>
-											<li>We sum all the results of multiplication from each <code>feature_value * weight</code> - the sum goes through the so-called <b>activation function</b>.</li>
+											<li>We sum all the results of multiplication from each <code>feature_value * weight</code> - the sum goes through the so-called <b>activation function</b>:
+												<br>
+												<code>x1 = input0 * weight</code><br>
+												<code>x2 = input1 *weight</code><br>
+												<code>sum = x1 + x2</code><br>
+												<code>activ_func(sum)</code>
+											</li>
 											<li>Activation function does the following transformation:
 												<br>
-												- <code>if sum > 0</code> then <code>output = 1</code>,<br>
-												- <code>if sum < 0</code> then <code>output = 0</code>.
+												- <code>if sum > 0</code> then <code>output = 1</code><br>
+												- <code>if sum < 0</code> then <code>output = 0</code>
 											</li>
 											<br>
 											<img src="images/neuron.JPG" width="500"><span style="font-size:10px;">source: udemy</span>
