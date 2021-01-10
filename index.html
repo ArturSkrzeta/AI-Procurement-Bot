@@ -57,13 +57,13 @@
 											<li>All conections between input values and neurons are weighted somehow - value of given feature is multiplied by a weight</li>
 											<li>We sum all the results of multiplication from each <code>feature_value * weight</code> and the sum goes through the so-called <b>activation function</b>:
 												<br>
-												<code>x1 = input0 * weight + bias</code><br>
-												<code>x2 = input1 * weight + bias</code><br>&nbsp&nbsp
+												<code>x1 = input0 * weight</code><br>
+												<code>x2 = input1 * weight</code><br>&nbsp&nbsp
 												adding bias prevents from getting nulls<br>
-												<code>sum = x1 + x2</code><br>
+												<code>sum = x1 + x2 + bias</code><br>
 												<code>activ_func(sum)</code><br>&nbsp&nbsp
 												we can simplify his with below equation:<br>
-												<code>output = F(&#8721;(xw)+b)</code><br>&nbsp&nbsp
+												<code>output = F(&#8721;(xw)+bias)</code><br>&nbsp&nbsp
 												where F is an activation function.
 											</li>
 											<li>Activation function does the following transformation:
@@ -99,7 +99,7 @@
 										<h5>Gradient Descent:</h5>
 										<ul>
 											<li>Algorithm used for finding the local minimum of a function.</li>
-											<li>Finding the minimum of a cost function is the main task in a deep learning.
+											<li>Finding the minimum of the cost function is the main task in the deep learning process.
 												<br>
 												<br>
 												<img src="images/gradient.JPG"><span style="font-size:12px;">source: udemy</span>
